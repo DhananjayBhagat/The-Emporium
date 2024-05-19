@@ -168,7 +168,7 @@ def show_cart(request):
         totalitem = len(Cart.objects.filter(user=request.user))
     return render(request, 'app/addtocart.html', locals())
 
-@login_required
+# @login_required
 def show_wishlist(request):
     user=request.user
     totalitem=0
