@@ -95,8 +95,8 @@
 {% block main-content %}{% endblock main-content %}
 {% block payment-gateway %} {% endblock payment-gateway %}
 
-<footer class="container-fluid bg-success fixed-bottom text-center text-white p-2 mt-5"> Copyright &copy: 2023 ||
-    Develop By : Dhananjay Bhagat & Nikhil Mormare
+<footer class="container-fluid bg-success fixed-bottom text-center text-white p-2 mt-5"> Copyright &copy: 2024 ||
+    Develop By : Dhananjay Bhagat and Nikhil Mormare
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -112,5 +112,19 @@
 <script src="{% static 'app/js/owl.carousel.min.js' %}"></script>
 <script src="{% static 'app/js/all.min.js' %}"></script>
 <script src="{% static 'app\js\myscript.js' %}"></script>
+
+<script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings =
+            {"appId":"30a9872240733fcb1bd020b51245ac94f","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+
+
 </body>
 </html>
